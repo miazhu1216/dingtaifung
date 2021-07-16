@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.0/firebase-ui-auth.css" />
+
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,5 +37,39 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    
+      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDTMU3ohzaA8DNW67S8LWAjc2UvGET6rWU",
+    authDomain: "dingtaifung-a15a5.firebaseapp.com",
+    databaseURL: "https://dingtaifung-a15a5-default-rtdb.firebaseio.com",
+    projectId: "dingtaifung-a15a5",
+    storageBucket: "dingtaifung-a15a5.appspot.com",
+    messagingSenderId: "460366560474",
+    appId: "1:460366560474:web:62c2b067ad5d8fd8c7f9e3",
+    measurementId: "G-2RD5DQXS9N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
 </html>

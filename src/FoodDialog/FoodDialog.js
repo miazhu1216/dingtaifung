@@ -9,12 +9,12 @@ import { useQuantity } from "../Hooks/useQuantity";
 import { useChoice } from "../Hooks/useChoice";
 import { Choices } from "./Choices";
 
-const Dialog = styled.div`
+export const Dialog = styled.div`
   width: 500px;
   background-color: white;
   position: fixed;
   top: 75px;
-  z-index: 5;
+  z-index: 11;
   max-height: calc(100% - 100px);
   left: calc(50% - 250px);
   display: flex;
@@ -54,14 +54,14 @@ export const ConfirmButton = styled(Title)`
   `}
 `;
 
-const DialogShadow = styled.div`
+export const DialogShadow = styled.div`
   position: fixed;
   height: 100%;
   width: 100%;
   top: 0px;
   background-color: black;
   opacity: 0.7;
-  z-index: 4;
+  z-index: 11;
 `;
 
 const DialogBanner = styled.div`
@@ -82,11 +82,8 @@ const DialogBannerName = styled(FoodLabel)`
 
 export function getPrice(order) {
   return (
-    order.quantity *
-    (order.price)
-  );
+    order.quantity * order.price);
 }
-
 
 
 function FoodDialogContainer({ openFood, setOpenFood, setOrders, orders }) {
