@@ -36,4 +36,4 @@ export const Food = styled.div`
  }
 `;
 
-//  © created by react.school
+

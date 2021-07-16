@@ -8,4 +8,4 @@ export const Banner = styled.div`
   filter: contrast(75%);
 `;
 
-//  © created by react.school
+

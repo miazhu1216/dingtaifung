@@ -102,4 +102,4 @@ export const foods = foodItems.reduce((res, food) => {
   return res;
 }, {});
 
-//  © created by react.school
+
